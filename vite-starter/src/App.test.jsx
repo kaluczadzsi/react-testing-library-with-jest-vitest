@@ -6,3 +6,9 @@ test("App contains correct heading", () => {
   const headingElement = screen.getByText(/learn react/i);
   expect(headingElement).toBeInTheDocument();
 });
+
+test("App contains correct heading 2", () => {
+  render(<App />);
+  const headingElement = screen.getByRole("heading", { name: /learn react/i });
+  expect(headingElement).toBeInTheDocument();
+});
