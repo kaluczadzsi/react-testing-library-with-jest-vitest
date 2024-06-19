@@ -19,6 +19,13 @@ function App() {
       <button onClick={handleChange} className={btnValues.color}>
         {btnValues.label}
       </button>
+      <br />
+      <label htmlFor="disable-button-checkbox">Disable button</label>
+      <input
+        type="checkbox"
+        id="disable-button-checkbox"
+        defaultChecked={false}
+      />
     </div>
   );
 }
